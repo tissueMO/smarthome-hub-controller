@@ -23,9 +23,9 @@
             <div class="row js-remote-controller">
               <div class="col-12">
                 <form class="js-remote-controller-form">
-                  <ul class="nav nav-pills nav-justified" role="tablist">
+                  <ul class="nav nav-pills" role="tablist">
                     <% for (const tabKey of Object.keys(contents)) { %>
-                      <li class="nav-item" role="presentation">
+                      <li class="nav-item w-50 text-center" role="presentation">
                         <a id="<%= tabKey %>-tab" href="#<%= tabKey %>" class="nav-link" data-toggle="tab"
                           role="tab" aria-controls="<%= tabKey %>" aria-selected="false"><%= contents[tabKey].caption %></a>
                       </li>

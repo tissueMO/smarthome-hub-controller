@@ -121,19 +121,113 @@
     ]
   },
 
+  "power": {
+    "caption": "電源切替",
+    "buttonGrid": [
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;テレビOFF",
+          "name": "meross_tv_off",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;テレビON",
+          "name": "meross_tv_on",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;暖房OFF",
+          "name": "meross_heater_off",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;暖房ON",
+          "name": "meross_heater_on",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;リビングOFF",
+          "name": "meross_livingroomlight_off",
+          "attributes": [ "rounded", "fill" ],
+          "disabled": true
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;リビングON",
+          "name": "meross_livingroomlight_on",
+          "attributes": [ "rounded", "fill" ],
+          "disabled": true
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;寝室ライトOFF",
+          "name": "meross_bedlight_off",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;寝室ライトON",
+          "name": "meross_bedlight_on",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;作業部屋OFF",
+          "name": "meross_workingroom_off",
+          "attributes": [ "rounded", "fill" ],
+          "disabled": true
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;作業部屋ON",
+          "name": "meross_workingroom_on",
+          "attributes": [ "rounded", "fill" ],
+          "disabled": true
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;エアコンOFF",
+          "name": "ac_power_off",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;エアコンON",
+          "name": "ac_power_on",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ]
+    ]
+  },
+
   "curtain": {
     "caption": "カーテン",
     "buttonGrid": [
       [
         {
-          "caption": "<span class=\"material-icons\">close_fullscreen</span>リビング 閉める",
-          "name": "curtain_close_livingroom",
-          "attributes": [ "rounded" ]
+          "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;寝室閉める",
+          "name": "curtain_close_bedroom",
+          "attributes": [ "rounded", "fill" ]
         },
         {
-          "caption": "<span class=\"material-icons\">open_in_full</span>リビング 開ける",
+          "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;寝室開ける",
+          "name": "curtain_open_bedroom",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;リビング閉める",
+          "name": "curtain_close_livingroom",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;リビング開ける",
           "name": "curtain_open_livingroom",
-          "attributes": [ "rounded" ]
+          "attributes": [ "rounded", "fill" ]
         }
       ],
       [
@@ -141,14 +235,14 @@
       ],
       [
         {
-          "caption": "<span class=\"material-icons\">close_fullscreen</span>寝室 閉める",
-          "name": "curtain_close_bedroom",
-          "attributes": [ "rounded" ]
+          "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;すべて閉める",
+          "name": "curtain_close_all",
+          "attributes": [ "rounded", "fill" ]
         },
         {
-          "caption": "<span class=\"material-icons\">open_in_full</span>寝室 開ける",
-          "name": "curtain_open_bedroom",
-          "attributes": [ "rounded" ]
+          "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;すべて開ける",
+          "name": "curtain_open_all",
+          "attributes": [ "rounded", "fill" ]
         }
       ]
     ]
@@ -159,34 +253,28 @@
     "buttonGrid": [
       [
         {
-          "caption": "<span class=\"material-icons\">play_arrow</span>清掃開始",
+          "caption": "<span class=\"material-icons\">play_arrow</span>&nbsp;清掃開始",
           "name": "irobot_start_clean",
-          "attributes": [ "rounded", "centered" ]
+          "attributes": [ "rounded", "centered", "fill" ]
         }
       ],
       [
-        "hr"
-      ],
-      [
         {
-          "caption": "<span class=\"material-icons\">pause</span>一時停止",
+          "caption": "<span class=\"material-icons\">pause</span>&nbsp;一時停止",
           "name": "irobot_pause_clean",
-          "attributes": [ "rounded" ]
+          "attributes": [ "rounded", "fill" ]
         },
         {
-          "caption": "<span class=\"material-icons\">play_arrow</span>清掃再開",
+          "caption": "<span class=\"material-icons\">play_arrow</span>&nbsp;清掃再開",
           "name": "irobot_resume_clean",
-          "attributes": [ "rounded" ]
+          "attributes": [ "rounded", "fill" ]
         }
       ],
       [
-        "hr"
-      ],
-      [
         {
-          "caption": "<span class=\"material-icons\">home</span>おうちに返す",
+          "caption": "<span class=\"material-icons\">home</span>&nbsp;おうちに返す",
           "name": "irobot_exit_clean",
-          "attributes": [ "rounded", "centered" ]
+          "attributes": [ "rounded", "centered", "fill" ]
         }
       ]
     ]
