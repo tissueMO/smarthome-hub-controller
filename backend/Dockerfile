@@ -6,7 +6,7 @@ ENV API_KEY xxxxxxxx
 WORKDIR /app
 
 # ソースコードをコピー
-ADD backend .
+ADD . .
 
 # 必要なパッケージをインストール
 RUN yarn
