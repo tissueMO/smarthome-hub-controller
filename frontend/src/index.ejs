@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('templates/_head'); %>
+</head>
+<body class="app">
+<%- include('templates/_header'); %>
+
+<div class="app-body js-dashboard">
+  <main class="main">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">&nbsp;</li>
+      </ol>
+    </nav>
+    <div class="progress fixed-top d-none post-progress js-post-progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="20" style="width: 0%"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="card col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6 mx-auto">
+          <div class="card-body px-0">
+            <div class="row js-remote-controller">
+              <div class="col-12">
+                <form class="js-remote-controller-form">
+                  <ul class="nav nav-pills nav-justified" role="tablist">
+                    <% for (const tabKey of Object.keys(contents)) { %>
+                      <li class="nav-item" role="presentation">
+                        <a id="<%= tabKey %>-tab" href="#<%= tabKey %>" class="nav-link" data-toggle="tab"
+                          role="tab" aria-controls="<%= tabKey %>" aria-selected="false"><%= contents[tabKey].caption %></a>
+                      </li>
+                    <% } %>
+                  </ul>
+                  <div class="tab-content border-0">
+                    <% for (const tabKey of Object.keys(contents)) { %>
+                      <div id="<%= tabKey %>" class="tab-pane" role="tabpanel" aria-labelledby="<%= tabKey %>-tab">
+                        <%- include('templates/_button_grid', { key: tabKey }); %>
+                      </div>
+                    <% } %>
+                  </div>
+              </form>
+            </div>
+            </div><!-- row -->
+          </div><!-- card-body -->
+        </div><!-- card -->
+      </div><!-- row -->
+    </div><!-- container-fluid -->
+  </main>
+</div><!-- app-body -->
+
+<%- include('templates/_footer'); %>
+</body>
+</html>

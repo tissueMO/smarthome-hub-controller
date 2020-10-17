@@ -1,0 +1,28 @@
+@import "~@coreui/coreui/scss/coreui.scss";
+@import "~animate.css/animate.compat.css";
+
+* {
+  font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+
+.btn {
+  line-height: 0.5rem;
+
+  &.rounded-circle {
+    &.p-0 {
+      width: 4rem;
+      height: 4rem;
+
+      &.h3 {
+        margin: 0;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+.post-progress {
+  top: 55px;
+  height: 3px;
+  border-radius: 0;
+}

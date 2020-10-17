@@ -1,0 +1,194 @@
+{
+  "tv": {
+    "caption": "テレビ",
+    "buttonGrid": [
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_settings_new</span>",
+          "name": "tv_turn_power",
+          "attributes": [ "rounded-circle" ],
+          "color": "success"
+        },
+        {
+          "caption": "<span class=\"material-icons\">volume_mute</span>",
+          "name": "tv_turn_mute",
+          "attributes": [ "rounded-circle" ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
+          "caption": "1",
+          "name": "tv_channel_1",
+          "attributes": [ "rounded-circle", "centered", "strong" ]
+        },
+        {
+          "caption": "2",
+          "name": "tv_channel_2",
+          "attributes": [ "rounded-circle", "strong" ]
+        },
+        {
+          "caption": "3",
+          "name": "tv_channel_3",
+          "attributes": [ "rounded-circle", "strong" ]
+        }
+      ],
+      [
+        {
+          "caption": "4",
+          "name": "tv_channel_4",
+          "attributes": [ "rounded-circle", "centered", "strong" ],
+          "disabled": true
+        },
+        {
+          "caption": "5",
+          "name": "tv_channel_5",
+          "attributes": [ "rounded-circle", "strong" ]
+        },
+        {
+          "caption": "6",
+          "name": "tv_channel_6",
+          "attributes": [ "rounded-circle", "strong" ]
+        }
+      ],
+      [
+        {
+          "caption": "7",
+          "name": "tv_channel_7",
+          "attributes": [ "rounded-circle", "centered", "strong" ]
+        },
+        {
+          "caption": "8",
+          "name": "tv_channel_8",
+          "attributes": [ "rounded-circle", "strong" ]
+        },
+        {
+          "caption": "9",
+          "name": "tv_channel_9",
+          "attributes": [ "rounded-circle", "strong" ],
+          "disabled": true
+        }
+      ],
+      [
+        {
+          "caption": "10",
+          "name": "tv_channel_10",
+          "attributes": [ "rounded-circle", "centered", "strong" ],
+          "disabled": true
+        },
+        {
+          "caption": "11",
+          "name": "tv_channel_11",
+          "attributes": [ "rounded-circle", "strong" ],
+          "disabled": true
+        },
+        {
+          "caption": "12",
+          "name": "tv_channel_12",
+          "attributes": [ "rounded-circle", "strong" ],
+          "disabled": true
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
+          "caption": "＋",
+          "name": "tv_volume_up",
+          "attributes": [ "rounded-circle", "centered", "strong" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">arrow_upward</span>",
+          "name": "tv_channel_up",
+          "attributes": [ "rounded-circle", "strong" ]
+        }
+      ],
+      [
+        {
+          "caption": "－",
+          "name": "tv_volume_down",
+          "attributes": [ "rounded-circle", "centered", "strong" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">arrow_downward</span>",
+          "name": "tv_channel_down",
+          "attributes": [ "rounded-circle", "strong" ]
+        }
+      ]
+    ]
+  },
+
+  "curtain": {
+    "caption": "カーテン",
+    "buttonGrid": [
+      [
+        {
+          "caption": "<span class=\"material-icons\">close_fullscreen</span>リビング 閉める",
+          "name": "curtain_close_livingroom",
+          "attributes": [ "rounded" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">open_in_full</span>リビング 開ける",
+          "name": "curtain_open_livingroom",
+          "attributes": [ "rounded" ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">close_fullscreen</span>寝室 閉める",
+          "name": "curtain_close_bedroom",
+          "attributes": [ "rounded" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">open_in_full</span>寝室 開ける",
+          "name": "curtain_open_bedroom",
+          "attributes": [ "rounded" ]
+        }
+      ]
+    ]
+  },
+
+  "irobot": {
+    "caption": "ルンちゃん",
+    "buttonGrid": [
+      [
+        {
+          "caption": "<span class=\"material-icons\">play_arrow</span>清掃開始",
+          "name": "irobot_start_clean",
+          "attributes": [ "rounded", "centered" ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">pause</span>一時停止",
+          "name": "irobot_pause_clean",
+          "attributes": [ "rounded" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">play_arrow</span>清掃再開",
+          "name": "irobot_resume_clean",
+          "attributes": [ "rounded" ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">home</span>おうちに返す",
+          "name": "irobot_exit_clean",
+          "attributes": [ "rounded", "centered" ]
+        }
+      ]
+    ]
+  }
+}
