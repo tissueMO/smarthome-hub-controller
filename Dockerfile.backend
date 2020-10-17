@@ -1,0 +1,12 @@
+FROM node:10
+
+WORKDIR /app
+
+# ソースコードをコピー
+ADD backend .
+
+# 必要なパッケージをインストール
+RUN yarn
+
+EXPOSE 8080
+CMD ["node", "server.js"]
