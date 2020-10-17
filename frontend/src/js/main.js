@@ -99,9 +99,11 @@ $(() => {
 
   // デフォルトのタブを選択
   const lastSelectedTabId = localStorage.getItem('tab');
-  if (lastSelectedTabId) {
-    $(`#${lastSelectedTabId}`).tab('show');
+  const lastSelectedTab = $(`#${lastSelectedTabId}`);
+  if (lastSelectedTabId && lastSelectedTab.length > 0) {
+    lastSelectedTab.tab('show');
   } else {
     $('.nav .nav-link:first').tab('show');
+    localStorage.removeItem('tab');
   }
 });
