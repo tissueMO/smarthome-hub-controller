@@ -189,14 +189,24 @@
         }
       ],
       [
+        "hr"
+      ],
+      [
         {
-          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;エアコンOFF",
-          "name": "ac_power_off",
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;A/C ドライON",
+          "name": "ac_power_dry_on",
           "attributes": [ "rounded", "fill" ]
         },
         {
-          "caption": "<span class=\"material-icons\">power</span>&nbsp;エアコンON",
-          "name": "ac_power_on",
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;A/C 暖房ON",
+          "name": "ac_power_heater_on",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;A/C OFF",
+          "name": "ac_power_off",
           "attributes": [ "rounded", "fill" ]
         }
       ]
