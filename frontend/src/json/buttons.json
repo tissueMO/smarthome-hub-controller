@@ -138,28 +138,14 @@
       ],
       [
         {
-          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;暖房OFF",
-          "name": "meross_heater_off",
-          "attributes": [ "rounded", "fill" ]
-        },
-        {
-          "caption": "<span class=\"material-icons\">power</span>&nbsp;暖房ON",
-          "name": "meross_heater_on",
-          "attributes": [ "rounded", "fill" ]
-        }
-      ],
-      [
-        {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;リビングOFF",
           "name": "meross_livingroomlight_off",
-          "attributes": [ "rounded", "fill" ],
-          "disabled": true
+          "attributes": [ "rounded", "fill" ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;リビングON",
           "name": "meross_livingroomlight_on",
-          "attributes": [ "rounded", "fill" ],
-          "disabled": true
+          "attributes": [ "rounded", "fill" ]
         }
       ],
       [
@@ -176,16 +162,28 @@
       ],
       [
         {
-          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;作業部屋OFF",
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;W/R ライトOFF",
           "name": "meross_workingroom_off",
           "attributes": [ "rounded", "fill" ],
           "disabled": true
         },
         {
-          "caption": "<span class=\"material-icons\">power</span>&nbsp;作業部屋ON",
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;W/R ライトON",
           "name": "meross_workingroom_on",
           "attributes": [ "rounded", "fill" ],
           "disabled": true
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;W/R 温風OFF",
+          "name": "meross_heater_off",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;W/R 温風ON",
+          "name": "meross_heater_on",
+          "attributes": [ "rounded", "fill" ]
         }
       ],
       [
