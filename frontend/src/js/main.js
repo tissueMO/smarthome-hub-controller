@@ -36,6 +36,11 @@ $(() => {
       processPartyMode(buttonName);
       return false;
     }
+    if (buttonName === 'all_off') {
+      // すべてOFF
+      allOff();
+      return false;
+    }
 
     // 通常: ボタン押下イベント送信
     sendButtonEvent(buttonName, true, true);
@@ -177,6 +182,14 @@ const processPartyMode = buttonName => {
       }
     });
   }
+};
+
+/**
+ * すべてOFFにします。
+ */
+const allOff = () => {
+  sendButtonEvent('meross_all_off', false, true);
+  sendButtonEvent('switchbot_all_off', true, true);
 };
 
 /**

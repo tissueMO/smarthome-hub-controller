@@ -211,6 +211,16 @@
       ],
       [
         {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;すべて OFF",
+          "name": "all_off",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;パーリナイ OFF",
           "name": "party_off",
           "attributes": [ "rounded", "fill" ]
