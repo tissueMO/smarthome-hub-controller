@@ -34,6 +34,7 @@ $(() => {
     if (buttonName.startsWith('party_')) {
       // パーティモード
       processPartyMode(buttonName);
+      return false;
     }
 
     // 通常: ボタン押下イベント送信
@@ -162,7 +163,7 @@ const processPartyMode = buttonName => {
     // パーティモード終了
     clearInterval(partyTimer);
     partyTimer = null;
-    sendButtonEvent(Settings.ButtonNameForPartyStopping, true, false);
+    sendButtonEvent(Settings.ButtonNameForPartyStopping, true, true);
 
     $.notify({
       message: 'パーティモード終了'
@@ -182,8 +183,6 @@ const processPartyMode = buttonName => {
  * プログレスバーの進捗を開始します。
  */
 const startProgressBar = () => {
-  $('.js-post-progress').removeClass('d-none');
-
   const $progressBar = $('.js-post-progress .progress-bar');
   $progressBar.attr('aria-valuenow', Number($progressBar.attr('aria-valuemin')));
   $progressBar.css('width', '0%');
@@ -192,6 +191,7 @@ const startProgressBar = () => {
   stopProgressBar();
 
   // 新しい進捗を開始
+  $('.js-post-progress').removeClass('d-none');
   progressBarTimer = setInterval(() => {
     const currentValue = Number($progressBar.attr('aria-valuenow'));
     const minValue = Number($progressBar.attr('aria-valuemin'));
@@ -206,6 +206,8 @@ const startProgressBar = () => {
 
     $progressBar.attr('aria-valuenow', nextValue);
     $progressBar.css('width', `${currentRate}%`);
+
+    console.log(`${currentRate}%`);
   }, 100);
 };
 
