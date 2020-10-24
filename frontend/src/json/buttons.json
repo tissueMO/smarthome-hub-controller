@@ -163,15 +163,13 @@
       [
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;W/R ライトOFF",
-          "name": "meross_workingroom_off",
-          "attributes": [ "rounded", "fill" ],
-          "disabled": true
+          "name": "light_workingroom_off",
+          "attributes": [ "rounded", "fill" ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;W/R ライトON",
-          "name": "meross_workingroom_on",
-          "attributes": [ "rounded", "fill" ],
-          "disabled": true
+          "name": "light_workingroom_on",
+          "attributes": [ "rounded", "fill" ]
         }
       ],
       [
@@ -205,6 +203,21 @@
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;A/C OFF",
           "name": "ac_power_off",
+          "attributes": [ "rounded", "fill" ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;パーリナイ OFF",
+          "name": "party_off",
+          "attributes": [ "rounded", "fill" ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">cake</span>&nbsp;パーリナイ ON",
+          "name": "party_on",
           "attributes": [ "rounded", "fill" ]
         }
       ]
