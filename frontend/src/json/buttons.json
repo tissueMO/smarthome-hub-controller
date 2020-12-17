@@ -7,7 +7,11 @@
           "caption": "<span class=\"material-icons\">power_settings_new</span>",
           "name": "tv_turn_power",
           "attributes": [ "rounded-circle" ],
-          "color": "success"
+          "color": "success",
+          "prepare": {
+            "command": "button",
+            "name": "meross_tv_on"
+          }
         },
         {
           "caption": "<span class=\"material-icons\">volume_mute</span>",
@@ -191,19 +195,34 @@
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;A/C ドライON",
           "name": "ac_power_dry_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [ "rounded", "fill" ],
+          "prepare": {
+            "command": "status",
+            "name": "livingroom_light",
+            "value": 1
+          }
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;A/C 暖房ON",
           "name": "ac_power_heater_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [ "rounded", "fill" ],
+          "prepare": {
+            "command": "status",
+            "name": "livingroom_light",
+            "value": 1
+          }
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;A/C OFF",
           "name": "ac_power_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [ "rounded", "fill" ],
+          "prepare": {
+            "command": "status",
+            "name": "livingroom_light",
+            "value": 0
+          }
         }
       ],
       [

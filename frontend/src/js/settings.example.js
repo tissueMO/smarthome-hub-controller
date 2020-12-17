@@ -6,6 +6,9 @@
 // APIキー
 export const apiBaseUrl = 'https://{DOMAIN_NAME}';
 
+// カスタムAPI
+export const customApiBaseUrl = 'http://localhost';
+
 /**
  * パーティモード中の送信間隔ミリ秒
  */

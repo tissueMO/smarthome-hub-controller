@@ -7,6 +7,9 @@
 <% if (!('color' in button)) { %>
   <% button.color = 'light'; %>
 <% } %>
+<% if (!('prepare' in button)) { %>
+  <% button.prepare = null; %>
+<% } %>
 
 <button class="js-remote-button btn m-1 d-inline-flex align-items-center justify-content-center
   <%- 'btn-' + button.color %>
@@ -16,6 +19,9 @@
   <%- (button.attributes.includes('strong')) ? 'font-weight-bold h3' : '' %>
   <%- (button.disabled) ? 'disabled' : '' %>
 " type="button" data-codename="<%- button.name %>"
+  data-prepare-command="<%- (button.prepare) ? button.prepare.command : '' %>"
+  data-prepare-name="<%- (button.prepare) ? button.prepare.name : '' %>"
+  data-prepare-value="<%- (button.prepare && button.prepare.value !== undefined) ? button.prepare.value : '' %>"
 <%- (button.disabled) ? 'disabled' : '' %>
 >
   <%- (button.attributes.includes('small')) ? '<small class="d-inline-flex flex-column align-items-center">' : '' %>

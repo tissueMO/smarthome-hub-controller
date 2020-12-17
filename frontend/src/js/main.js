@@ -29,6 +29,9 @@ $(() => {
   // ボタン押下時
   $('.js-remote-button').on('click', e => {
     const buttonName = $(e.currentTarget).data('codename');
+    const prepareCommand = $(e.currentTarget).data('prepare-command');
+    const prepareName = $(e.currentTarget).data('prepare-name');
+    const prepareValue = $(e.currentTarget).data('prepare-value');
 
     // 特殊コード判定
     if (buttonName.startsWith('party_')) {
@@ -40,6 +43,18 @@ $(() => {
       // すべてOFF
       allOff();
       return false;
+    }
+
+    if (prepareCommand) {
+      // 前処理フック
+      if (prepareCommand === 'button') {
+        // 別のボタンを押下する
+        sendButtonEvent(prepareName, false, true);
+      }
+      if (prepareCommand === 'status') {
+        // ステータスを更新する
+        updateStatus(prepareName, prepareValue);
+      }
     }
 
     // 通常: ボタン押下イベント送信
@@ -118,6 +133,35 @@ const sendButtonEvent = async (buttonName, enabledProgressBar, enabledNotify) =>
 
   if (enabledProgressBar) {
     stopProgressBar();
+  }
+};
+
+/**
+ * ステータスを更新します。
+ * @param {string} statusName
+ * @param {int} value
+ */
+const updateStatus = async (statusName, value) => {
+  const postUrl = `${Settings.customApiBaseUrl}/status/set`;
+  console.info(`POST: ${postUrl}`);
+
+  const response = await fetch(postUrl, {
+    method: 'POST',
+    mode: 'cors',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      name: statusName,
+      value: value
+    })
+  });
+
+  if (response.ok) {
+    console.info(`Success: ${statusName}`);
+  } else {
+    console.info(`Failure: ${statusName}`);
+    console.error(response);
   }
 };
 
@@ -219,8 +263,6 @@ const startProgressBar = () => {
 
     $progressBar.attr('aria-valuenow', nextValue);
     $progressBar.css('width', `${currentRate}%`);
-
-    console.log(`${currentRate}%`);
   }, 100);
 };
 
