@@ -3,10 +3,10 @@
 //    settings.js としてコピーした上で適宜設定を行って下さい。
 // ###################################################################
 
-// APIキー
+// バックエンドURL
 export const apiBaseUrl = 'https://{DOMAIN_NAME}';
 
-// カスタムAPI
+// カスタムAPIURL
 export const customApiBaseUrl = 'http://localhost';
 
 /**
