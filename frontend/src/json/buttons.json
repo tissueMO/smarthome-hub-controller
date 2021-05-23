@@ -6,7 +6,9 @@
         {
           "caption": "<span class=\"material-icons\">power_settings_new</span>",
           "name": "tv_turn_power",
-          "attributes": [ "rounded-circle" ],
+          "attributes": [
+            "rounded-circle"
+          ],
           "color": "success",
           "prepare": {
             "command": "button",
@@ -16,7 +18,9 @@
         {
           "caption": "<span class=\"material-icons\">volume_mute</span>",
           "name": "tv_turn_mute",
-          "attributes": [ "rounded-circle" ]
+          "attributes": [
+            "rounded-circle"
+          ]
         }
       ],
       [
@@ -26,52 +30,82 @@
         {
           "caption": "1",
           "name": "tv_channel_1",
-          "attributes": [ "rounded-circle", "centered", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "centered",
+            "strong"
+          ]
         },
         {
           "caption": "2",
           "name": "tv_channel_2",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         },
         {
           "caption": "3",
           "name": "tv_channel_3",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         }
       ],
       [
         {
           "caption": "4",
           "name": "tv_channel_4",
-          "attributes": [ "rounded-circle", "centered", "strong" ],
+          "attributes": [
+            "rounded-circle",
+            "centered",
+            "strong"
+          ],
           "disabled": true
         },
         {
           "caption": "5",
           "name": "tv_channel_5",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         },
         {
           "caption": "6",
           "name": "tv_channel_6",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         }
       ],
       [
         {
           "caption": "7",
           "name": "tv_channel_7",
-          "attributes": [ "rounded-circle", "centered", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "centered",
+            "strong"
+          ]
         },
         {
           "caption": "8",
           "name": "tv_channel_8",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         },
         {
           "caption": "9",
           "name": "tv_channel_9",
-          "attributes": [ "rounded-circle", "strong" ],
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ],
           "disabled": true
         }
       ],
@@ -79,19 +113,29 @@
         {
           "caption": "10",
           "name": "tv_channel_10",
-          "attributes": [ "rounded-circle", "centered", "strong" ],
+          "attributes": [
+            "rounded-circle",
+            "centered",
+            "strong"
+          ],
           "disabled": true
         },
         {
           "caption": "11",
           "name": "tv_channel_11",
-          "attributes": [ "rounded-circle", "strong" ],
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ],
           "disabled": true
         },
         {
           "caption": "12",
           "name": "tv_channel_12",
-          "attributes": [ "rounded-circle", "strong" ],
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ],
           "disabled": true
         }
       ],
@@ -102,29 +146,42 @@
         {
           "caption": "＋",
           "name": "tv_volume_up",
-          "attributes": [ "rounded-circle", "centered", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "centered",
+            "strong"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">arrow_upward</span>",
           "name": "tv_channel_up",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         }
       ],
       [
         {
           "caption": "－",
           "name": "tv_volume_down",
-          "attributes": [ "rounded-circle", "centered", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "centered",
+            "strong"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">arrow_downward</span>",
           "name": "tv_channel_down",
-          "attributes": [ "rounded-circle", "strong" ]
+          "attributes": [
+            "rounded-circle",
+            "strong"
+          ]
         }
       ]
     ]
   },
-
   "power": {
     "caption": "電源切替",
     "buttonGrid": [
@@ -132,60 +189,90 @@
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;テレビOFF",
           "name": "meross_tv_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;テレビON",
           "name": "meross_tv_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;リビングOFF",
           "name": "meross_livingroomlight_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;リビングON",
           "name": "meross_livingroomlight_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;寝室ライトOFF",
           "name": "meross_bedlight_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;寝室ライトON",
           "name": "meross_bedlight_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;W/R ライトOFF",
           "name": "light_workingroom_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;W/R ライトON",
           "name": "light_workingroom_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;W/R 温風OFF",
           "name": "meross_heater_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;W/R 温風ON",
           "name": "meross_heater_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
@@ -195,7 +282,10 @@
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;A/C ドライON",
           "name": "ac_power_dry_on",
-          "attributes": [ "rounded", "fill" ],
+          "attributes": [
+            "rounded",
+            "fill"
+          ],
           "prepare": {
             "command": "status",
             "name": "livingroom_light",
@@ -205,7 +295,10 @@
         {
           "caption": "<span class=\"material-icons\">power</span>&nbsp;A/C 暖房ON",
           "name": "ac_power_heater_on",
-          "attributes": [ "rounded", "fill" ],
+          "attributes": [
+            "rounded",
+            "fill"
+          ],
           "prepare": {
             "command": "status",
             "name": "livingroom_light",
@@ -217,7 +310,10 @@
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;A/C OFF",
           "name": "ac_power_off",
-          "attributes": [ "rounded", "fill" ],
+          "attributes": [
+            "rounded",
+            "fill"
+          ],
           "prepare": {
             "command": "status",
             "name": "livingroom_light",
@@ -232,7 +328,10 @@
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;すべて OFF",
           "name": "all_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
@@ -242,17 +341,22 @@
         {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;パーリナイ OFF",
           "name": "party_off",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">cake</span>&nbsp;パーリナイ ON",
           "name": "party_on",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ]
     ]
   },
-
   "curtain": {
     "caption": "カーテン",
     "buttonGrid": [
@@ -260,24 +364,54 @@
         {
           "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;寝室閉める",
           "name": "curtain_close_bedroom",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;寝室開ける",
           "name": "curtain_open_bedroom",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;リビング閉める",
           "name": "curtain_close_livingroom",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;リビング開ける",
           "name": "curtain_open_livingroom",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;作業部屋閉める",
+          "name": "curtain_close_workingroom",
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;作業部屋開ける",
+          "name": "curtain_open_workingroom",
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
@@ -287,17 +421,22 @@
         {
           "caption": "<span class=\"material-icons\">close_fullscreen</span>&nbsp;すべて閉める",
           "name": "curtain_close_all",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">open_in_full</span>&nbsp;すべて開ける",
           "name": "curtain_open_all",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ]
     ]
   },
-
   "irobot": {
     "caption": "ルンちゃん",
     "buttonGrid": [
@@ -305,26 +444,40 @@
         {
           "caption": "<span class=\"material-icons\">play_arrow</span>&nbsp;清掃開始",
           "name": "irobot_start_clean",
-          "attributes": [ "rounded", "centered", "fill" ]
+          "attributes": [
+            "rounded",
+            "centered",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">pause</span>&nbsp;一時停止",
           "name": "irobot_pause_clean",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         },
         {
           "caption": "<span class=\"material-icons\">play_arrow</span>&nbsp;清掃再開",
           "name": "irobot_resume_clean",
-          "attributes": [ "rounded", "fill" ]
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
         }
       ],
       [
         {
           "caption": "<span class=\"material-icons\">home</span>&nbsp;おうちに返す",
           "name": "irobot_exit_clean",
-          "attributes": [ "rounded", "centered", "fill" ]
+          "attributes": [
+            "rounded",
+            "centered",
+            "fill"
+          ]
         }
       ]
     ]
