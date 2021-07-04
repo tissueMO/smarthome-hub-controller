@@ -187,6 +187,45 @@
     "buttonGrid": [
       [
         {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;彩乃 OA終了",
+          "name": "meross_onair_2_off",
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;彩乃 OA開始",
+          "name": "meross_onair_2_on",
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
+        }
+      ],
+      [
+        {
+          "caption": "<span class=\"material-icons\">power_off</span>&nbsp;知樹 OA終了",
+          "name": "meross_onair_1_off",
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
+        },
+        {
+          "caption": "<span class=\"material-icons\">power</span>&nbsp;知樹 OA開始",
+          "name": "meross_onair_1_on",
+          "attributes": [
+            "rounded",
+            "fill"
+          ]
+        }
+      ],
+      [
+        "hr"
+      ],
+      [
+        {
           "caption": "<span class=\"material-icons\">power_off</span>&nbsp;テレビOFF",
           "name": "meross_tv_off",
           "attributes": [
