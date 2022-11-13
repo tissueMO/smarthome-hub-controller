@@ -1,0 +1,30 @@
+version: '3.7'
+services:
+  frontend:
+    build:
+      context: frontend
+      target: development
+    volumes:
+      - ./frontend/node_modules:/app/node_modules
+      - ./frontend/src:/app/src
+      - ./frontend/.eslintrc.js:/app/.eslintrc.js
+      - ./frontend/babel.config.js:/app/babel.config.js
+      - ./frontend/package.json:/app/package.json
+      - ./frontend/webpack.common.js:/app/webpack.common.js
+      - ./frontend/webpack.dev.js:/app/webpack.dev.js
+      - ./frontend/yarn.lock:/app/yarn.lock
+    ports:
+      - 3000:3000
+  backend:
+    build:
+      context: backend
+    volumes:
+      - ./backend/node_modules:/app/node_modules
+      - ./backend/index.js:/app/index.js
+      - ./backend/server.js:/app/server.js
+      - ./backend/package.json:/app/package.json
+      - ./backend/yarn.lock:/app/yarn.lock
+    ports:
+      - 8080:8080
+    env_file:
+      - ./backend/.env

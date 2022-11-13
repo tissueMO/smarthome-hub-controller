@@ -62,8 +62,8 @@ Webhook を介することで IFTTT 等の外部サービスと連携した任�
 - `/frontend/src/js/settings.example.js` をもとに環境依存する値 (バックエンドサーバーのURL) を設定した `/frontend/src/js/settings.js` を作成します。
 - 使用するボタンの名前やレイアウト情報を `/frontend/src/json/buttons.json` に書き込みます。
 - 以下のコマンドで公開ファイル群をビルドします。
-    - `$ yarn run dev`
-        - 本番モードでビルドするには `$ yarn run build` とします。
+    - `$ yarn build:dev`
+        - 本番モードでビルドするには `$ yarn build` とします。
         - 本番モードでの出力には、map ファイルが含まれず、CSS および JavaScript ファイルが Minify されたものになります。
 - `/frontend/public/` 以下に作られたファイルを、任意の Web サーバーの公開ディレクトリーに配置します。
     - 前掲アーキテクチャー概略のうち、 Web サーバー に相当します。
