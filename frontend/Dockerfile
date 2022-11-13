@@ -10,7 +10,8 @@ CMD ["yarn", "dev"]
 # ビルドステージ
 FROM development AS build
 
-RUN yarn build
+ADD . .
+RUN yarn && yarn build
 
 
 # 本番ステージ
